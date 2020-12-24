@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".Registration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:paddingBottom="40sp"
+            android:paddingTop="40sp"
+
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Регистрация"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:hint="Телефон"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginTop="20sp"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="@drawable/filed"
+            android:padding="10sp"
+            android:ems="10"
+            android:singleLine="false" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonNameReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginTop="20sp"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="@drawable/filed"
+            android:padding="10sp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Имя" />
+
+        <EditText
+            android:id="@+id/editTextLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginTop="20sp"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="@drawable/filed"
+            android:padding="10sp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Логин"
+             />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginTop="20sp"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="@drawable/filed"
+            android:padding="10sp"
+            android:ems="10"
+            android:hint="Пароль"
+            android:inputType="textPassword" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:layout_marginRight="60sp"
+            android:layout_marginTop="20sp"
+            android:text="Я сотрудник" />
+
+        <Button
+            android:id="@+id/butReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_stail"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="Регистрация" />
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_stail"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="назад" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

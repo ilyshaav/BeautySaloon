@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:orientation="vertical"
+    tools:context=".Cabinet">
+
+    <fragment
+        android:id="@+id/fr_place"
+        android:name="com.example.beaty_saloon.Appointment"
+        android:layout_width="match_parent"
+        android:layout_height="599dp"
+        android:layout_marginStart="6sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        tools:layout="@layout/fragment_appointment"></fragment>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAppoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Change"
+            android:text="записаться"
+            app:icon="@drawable/newapp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            app:iconSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonMyAppoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Change"
+            android:text="Мои записи"
+            app:icon="@drawable/myapp"
+            app:iconSize="24sp"
+            android:layout_marginRight="10sp"
+            app:rippleColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonGlossary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Change"
+            android:text="Глоссарий "
+            app:icon="@drawable/glossary"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            app:iconSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonAboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Change"
+            android:text="О нас"
+            android:layout_marginLeft="6sp"
+            android:layout_marginRight="20sp"
+            android:paddingHorizontal="40sp"
+            app:icon="@android:drawable/ic_dialog_info"
+            app:iconSize="24sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

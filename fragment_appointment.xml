@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Appointment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лист услуг"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginBottom="10sp"
+            android:textSize="35sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="center"/>
+
+        <CheckBox
+            android:id="@+id/checkDarsonval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_purple"
+            android:minHeight="35sp"
+            android:text="Дарсонвализация обычная - 1000 руб" />
+
+        <CheckBox
+            android:id="@+id/checkLinfodrenaj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35sp"
+            android:text="Линфодренаж тела - 4000 руб" />
+
+        <CheckBox
+            android:id="@+id/checkLifting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_purple"
+            android:minHeight="35sp"
+            android:text="Кислородный лифтинг - 2000 руб" />
+
+        <CheckBox
+            android:id="@+id/checkPlazma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35sp"
+            android:text="Плазмолифтинг лицевой - 6000 руб" />
+
+        <CheckBox
+            android:id="@+id/checkRefactor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_purple"
+            android:minHeight="35sp"
+            android:text="Термаж лица - 700 руб"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/checkDiagnoz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35sp"
+            android:text="Диагностика кожи - 500 руб" />
+
+        <CheckBox
+            android:id="@+id/checkIonoforez"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_purple"
+            android:minHeight="35sp"
+            android:text="Ионофорез тела - 3000 руб" />
+
+        <CheckBox
+            android:id="@+id/checkTatuaj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35sp"
+            android:text="Татуаж бровей - 1500 руб" />
+
+        <CheckBox
+            android:id="@+id/checkPhototerapy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_purple"
+            android:minHeight="35sp"
+            android:text="Фототерапия лица - 700 руб" />
+
+        <CheckBox
+            android:id="@+id/checkBotox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35sp"
+            android:text="Ботоксная процедура - 17000 руб" />
+
+        <CheckBox
+            android:id="@+id/checkShellak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_purple"
+            android:minHeight="35sp"
+            android:text="Маникюр шеллкак - 1200 руб" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/filed"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:textAlignment="center"
+            android:hint="Дата"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Оформить запись" />
+    </LinearLayout>
+</FrameLayout>
